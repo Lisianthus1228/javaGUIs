@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=HelpWindow
+comment1.params=frame
+comment1.target=HelpWindow(javax.swing.JFrame)
+numComments=2
