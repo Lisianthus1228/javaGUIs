@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=project2_snake
+comment1.params=
+comment1.target=project2_snake()
+comment10.params=time
+comment10.target=void\ changeReadInterval(long)
+comment11.params=
+comment11.target=void\ updateGame()
+comment12.params=args
+comment12.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ run()
+comment3.params=
+comment3.target=void\ run()
+comment4.params=
+comment4.target=void\ pauseGame()
+comment5.params=
+comment5.target=void\ endGame()
+comment6.params=
+comment6.target=void\ generateApple()
+comment7.params=currentDir\ pastDir
+comment7.target=void\ ouroborosCheck(java.lang.String,\ java.lang.String)
+comment8.params=
+comment8.target=void\ resetArrayBoard()
+comment9.params=
+comment9.target=void\ updateDisplayBoard()
+numComments=13
