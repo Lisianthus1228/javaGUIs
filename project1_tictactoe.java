@@ -14,6 +14,7 @@ public class project1_tictactoe extends JFrame {
         {63, 64, 65},
         {66, 67, 68}
     };
+    boolean winner = false;
     JPanel boardPanel;
     JLabel playerOne, playerTwo, gameLabel;
     JTextField playerOneTF, playerTwoTF;
@@ -123,7 +124,7 @@ public class project1_tictactoe extends JFrame {
             // GAMEBOARD LOGIC
             gameBoard[gridTile/3][gridTile%3] = currentTurn; // Example: gridTile of 7 gets placed in [2][1]
             // Check for a winner
-                boolean winner = false;
+                winner = false;
                 // CASE 1: Any of the row's
                 for(int i=0; i < gameBoard.length; i++) {
                     if(gameBoard[i][0] == (gameBoard[i][1]) && gameBoard[i][0] == (gameBoard[i][2])) {
@@ -204,7 +205,8 @@ public class project1_tictactoe extends JFrame {
     
     public class ResetEvent implements ActionListener { // RESET GAME
         public void actionPerformed(ActionEvent re) {
-            int currentTurn = 1; // Reset to player one.
+            winner = false;
+            currentTurn = 1; // Reset to player one.
             playerOneButton.setEnabled(true);
             playerOneTF.setEnabled(true);
             playerTwoButton.setEnabled(false);
